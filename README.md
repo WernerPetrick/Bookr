@@ -54,8 +54,8 @@ Bookr is a learning project designed to explore Ruby programming concepts includ
 
 ## Screenshots
 
-_Coming soon! Screenshots will showcase the terminal interface, movie selection, and seating chart._
 ![Main Menu](main_menu_showcase.png)
+
 ![Receipt](receipt_showcase.png)
 
 ## Project Structure
