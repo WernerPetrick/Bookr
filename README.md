@@ -71,15 +71,6 @@ bookr/
 └── README.md
 ```
 
-## 🎯 Learning Objectives
-
-This project explores:
-- Object-oriented programming in Ruby
-- Terminal UI/UX design
-- User input validation and error handling
-- Age-based authorization logic
-- Gem integration and dependency management
-
 ## 🤝 Contributing
 
 While this is primarily a learning project, feedback and suggestions are welcome! Feel free to:
