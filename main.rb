@@ -5,6 +5,7 @@ require 'tty-box'
 require 'tty-prompt'
 require_relative 'lib/bookr/movie'
 require_relative 'lib/bookr/user'
+require_relative 'lib/bookr/cinema'
 
 prompt = TTY::Prompt.new
 
@@ -71,29 +72,14 @@ def snacks_menu
   return receipt_items, total
 end
 
-def display_chart(seating_chart)
-  seating_chart.each do |row, seats|
-    print "#{row} "
-    seats.each_with_index do |seat, i|
-      print seat == 'X' ? "[#{seat.red}]" : "[#{seat}]"
-    end
-    puts
-  end
-end
-
 def book_seat(selected)
-  rows = ('A'..'T').to_a
-  seats_per_row = 25
 
-  seating_chart = {}
-  rows.each do |row|
-    seating_chart[row] = Array.new(seats_per_row, ' ')
-  end
+  cinema = Cinema.new 
 
   if selected
     puts "Please select an open seat from the seating chart.".bold
     puts "\n---- Seating Chart ----\n".underline
-    display_chart(seating_chart)
+    cinema.seating_chart
   else
     puts "Your seat number is number A8"
   end

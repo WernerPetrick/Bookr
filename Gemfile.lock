@@ -1,8 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    appwrite (19.3.0)
+      mime-types (~> 3.4.1)
     artii (2.1.2)
     colorize (1.1.0)
+    mime-types (3.4.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2025.0924)
     pastel (0.8.0)
       tty-color (~> 0.5)
     strings (0.2.1)
@@ -33,6 +38,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  appwrite (~> 19.3)
   artii
   colorize
   tty-box
